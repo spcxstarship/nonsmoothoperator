@@ -1,4 +1,4 @@
-# Nonsmooth Operator
+# NonSmoothOperator
 
 Research monorepo for the final year project on physics-informed neural networks, hybrid dynamics, and LLM-assisted experimental design. The [project specification](docs/project-spec.pdf) is the source of requirements.
 
