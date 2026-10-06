@@ -2,6 +2,10 @@
 
 Research monorepo for the final year project on physics-informed neural networks, hybrid dynamics, and LLM-assisted experimental design. The [project specification](docs/project-spec.pdf) is the source of requirements.
 
+## Public repository
+
+This repository is public. Contributions, experiment artifacts, and commit history may be visible to anyone. Before adding material, check that it contains no credentials, personal information, private research data, or third-party content without redistribution rights. Agents and contributors should follow [AGENTS.md](AGENTS.md); `.gitignore` alone does not prevent disclosure of tracked files.
+
 ## Repository layout
 
 | Path | Purpose |
