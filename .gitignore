@@ -1,0 +1,20 @@
+# Python environments and caches
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local data and generated experiment artifacts
+data/*
+!data/README.md
+experiments/**/outputs/
+experiments/**/checkpoints/
+*.ckpt
+*.pt
+*.pth
+
+# Notebook checkpoints and local files
+.ipynb_checkpoints/
+.DS_Store
