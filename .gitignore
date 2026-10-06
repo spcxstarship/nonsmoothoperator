@@ -1,20 +1,46 @@
-# Python environments and caches
+# Local environments and secrets
 .venv/
+venv/
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Python caches, test output, and package builds
 __pycache__/
 *.py[cod]
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+*.egg-info/
+build/
+dist/
+
+# Optional app dependencies and build output
+node_modules/
+.next/
+*.tsbuildinfo
 
 # Local data and generated experiment artifacts
-data/*
-!data/README.md
-experiments/**/outputs/
-experiments/**/checkpoints/
+/data/*
+!/data/README.md
+/experiments/**/outputs/
+/experiments/**/checkpoints/
+/experiments/**/runs/
+wandb/
+mlruns/
 *.ckpt
 *.pt
 *.pth
+*.safetensors
 
-# Notebook checkpoints and local files
+# Notebook checkpoints and editor/OS files
 .ipynb_checkpoints/
+.idea/
+.vscode/
 .DS_Store
