@@ -1,0 +1,5 @@
+# Reproduced with Python 3.12 on CPU. Install into a virtual environment.
+numpy==2.5.3
+scipy==1.18.1
+torch==2.14.1
+matplotlib==3.11.2

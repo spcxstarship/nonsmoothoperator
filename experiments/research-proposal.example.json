@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "id": "measurement-and-contact",
+  "action": "experiment",
+  "hypothesis": "Measurement disagreement with a contact-ambiguity bonus can improve five-experiment prediction error relative to local D-optimal design in sparse regimes.",
+  "mechanism": "The formula retains alternative contact outcomes while using disagreement at the actual measurement time.",
+  "disconfirming_observation": "Local D-optimal design matches or beats the formula, or any apparent gain disappears under numerical refinement.",
+  "measurement_times_s": [0.38, 0.46, 0.6],
+  "noise_std_m": 0.02,
+  "formula": [
+    {"weight": 1.0, "feature": "measurement_snr", "transform": "log1p"},
+    {"weight": 0.25, "feature": "contact_entropy", "transform": "identity"}
+  ],
+  "replicates": null
+}

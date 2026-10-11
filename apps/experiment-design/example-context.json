@@ -1,0 +1,11 @@
+{
+  "objective": "Choose a vertical actuation that may help identify the timing of the first impact.",
+  "max_abs_acceleration_m_s2": 2.0,
+  "candidates": [
+    {"id": "downward", "acceleration_m_s2": -2.0, "description": "Constant downward input from release through the first rebound"},
+    {"id": "neutral", "acceleration_m_s2": 0.0, "description": "No applied input from release through the first rebound"},
+    {"id": "upward", "acceleration_m_s2": 2.0, "description": "Constant upward input from release through the first rebound"}
+  ],
+  "history": [],
+  "diagnostics": {}
+}

@@ -1,0 +1,42 @@
+{
+  "study": "ball-identification-v1",
+  "simulator": {"floor_m": 0.12, "restitution": 0.8, "gravity_m_s2": 9.81},
+  "observations": {
+    "seed": 17,
+    "noise_std_m": 0.01,
+    "initial_height_m": 1.0,
+    "accelerations_m_s2": [-4.0, 0.0, 4.0],
+    "times_s": [0.08, 0.14, 0.20, 0.26, 0.32, 0.38, 0.44, 0.50, 0.56, 0.62, 0.68, 0.70]
+  },
+  "inference": {
+    "floor_bounds_m": [0.0, 0.25],
+    "restitution_bounds": [0.6, 0.95],
+    "initial_floor_m": 0.05,
+    "initial_restitution": 0.65
+  },
+  "pinn": {
+    "seeds": [0, 1, 2],
+    "width": 16,
+    "collocation_points_per_segment": 48,
+    "adam_steps": 1500,
+    "adam_learning_rate": 0.003,
+    "lbfgs_steps": 1000,
+    "physics_weight": 100.0,
+    "guard_weight": 100.0
+  },
+  "evaluation": {
+    "initial_heights_m": [0.85, 1.15],
+    "accelerations_m_s2": [-2.0, 2.0],
+    "horizon_s": 0.62,
+    "points_per_trajectory": 301,
+    "diagnostic_points_per_segment": 197
+  },
+  "pilot_success_criteria": {
+    "floor_absolute_error_m": 0.03,
+    "restitution_absolute_error": 0.05,
+    "parameter_transfer_position_rmse_m": 0.03,
+    "flow_dh_minus_v_rms_m_s": 0.03,
+    "flow_dv_plus_effective_gravity_rms_m_s2": 0.1,
+    "guard_absolute_error_m": 0.005
+  }
+}
