@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "id": "measurement-only",
+  "action": "experiment",
+  "hypothesis": "Removing the contact-entropy bonus may improve held-out prediction error if that bonus diverts choices away from informative position measurements.",
+  "mechanism": "Ablate only the 0.25 times contact-entropy term. Keep log1p of measurement SNR, the same observation budgets, data streams, estimator, candidate set, baselines, and numerical resolution.",
+  "disconfirming_observation": "Removing the bonus leaves choices and prediction error unchanged, or increases prediction error. Numerical refinement failures prevent interpreting the comparison.",
+  "measurement_times_s": [0.38, 0.46, 0.6],
+  "noise_std_m": 0.02,
+  "formula": [
+    {"weight": 1.0, "feature": "measurement_snr", "transform": "log1p"}
+  ],
+  "replicates": null
+}

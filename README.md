@@ -21,4 +21,17 @@ This repository is public. Contributions, experiment artifacts, and commit histo
 | `data/` | Local datasets; document their sources here. |
 | `docs/` | Project specification and research documentation. |
 
-This is an initial scaffold. Add dependencies, commands, and implementation files as the experimental plan becomes concrete.
+The first learning experiment compares a classical estimator with a flow/jump
+PINN on noisy bouncing-ball observations. See the
+[parameter-identification pilot](experiments/ball-identification.md) for setup,
+run commands, evaluation definitions, and current limitations.
+
+The [autonomous research plan](docs/autonomous-research-plan.md) defines the
+candidate scientific claim, prior-work review, experiment gates, and execution
+limits for the next research campaign.
+
+The first [research loop](experiments/research-loop.md) is runnable: submit a
+structured hypothesis and selection formula, compare it against numerical
+baselines, and feed the saved evidence into the next proposal. It supports a
+configured external controller and exact replay checks without requiring an LLM
+service for the numerical experiments.
