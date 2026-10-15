@@ -590,9 +590,12 @@ a resume record and report the decision. Do not automatically increase budgets,
 relabel development cases as final tests, or overwrite unfavorable results.
 
 This plan schedules no background process and grants no publication or messaging
-permission. The existing draft course material in `docs/` still requires a
-redistribution-rights review before publication proceeds, as already flagged
-under AGENTS.md. Local research and plan editing can continue.
+permission. The course notes and project specification in `docs/` are kept
+locally and excluded from tracking pending redistribution-rights review.
+Earlier commits contain these documents; removing them from the current tree
+does not remove those historical copies. Further research publication remains
+on hold under AGENTS.md until redistribution is authorized or the exposed
+history is remediated. Local research and plan editing can continue.
 
 The first useful milestone is evidence that distinguishes competing explanations
 for identification failure and can reject the proposed hypothesis. Success is

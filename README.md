@@ -1,6 +1,6 @@
 # NonSmoothOperator
 
-Research monorepo for the final year project on physics-informed neural networks, hybrid dynamics, and LLM-assisted experimental design. The [project specification](docs/project-spec.pdf) is the source of requirements.
+Research monorepo for the final year project on physics-informed neural networks, hybrid dynamics, and LLM-assisted experimental design. The project specification is kept locally pending redistribution-rights review. Public research goals and evaluation gates are documented in the [autonomous research plan](docs/autonomous-research-plan.md).
 
 ## Public repository
 

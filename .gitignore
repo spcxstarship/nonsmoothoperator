@@ -53,7 +53,9 @@ mlruns/
 .vscode/
 .DS_Store
 
-# Third-party course material without redistribution rights
+# Local course documents pending redistribution-rights review
+/docs/ele4023-hybrid-systems-not-final.pdf
+/docs/project-spec.pdf
 /docs/Ace final year project v6.pdf
 /docs/HOW TO WRITE A HALF-DECENT TECH REPORT v2.pdf
 /docs/Starting a final year project.pdf
